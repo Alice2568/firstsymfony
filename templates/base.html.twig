@@ -1,96 +1,27 @@
-{% extends 'partial/header.html.twig' %}
-  <div>
-    <section class="divcard">
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
-        <div class="col">
-          <div class="card">
-            <img src="img/antipasti/antipasto-board-with-ham-cheese-nuts-honey.jpg" class="card-img-top"
-              alt="image d'un plateau de charcuterie et de fromage">
-            <div class="card-body">
-              <h5 class="card-title">Antipasti</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-                content.</p>
-              <a href="antipasti.php" class="btn btn-danger">Nos Antipastis</a>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="img/pizza/top-view-pepperoni-pizza-with-sausage-tomato-sauce-cheese-herb-sprinkles.jpg"
-              class="card-img-top" alt="image d'une pizza aux pepperonies et au fromage">
-            <div class="card-body">
-              <h5 class="card-title">Pizza</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-                content.</p>
-              <a href="pizza.php" class="btn btn-danger">Nos Pizzas</a>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="img/risotto/healthy-vegetarian-risotto-plate-homemade-italian-gourmet-meal-generated-by-ai.jpg"
-              class="card-img-top" alt="image d'une pizza aux pepperonies et au fromage">
-            <div class="card-body hidden-hover">
-              <h5 class="card-title">Risotto</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-                content.</p>
-              <a href="risotto.php" class="btn btn-danger">Nos Risottos</a>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="img/pasta/authentic-italian-pasta.jpg" class="card-img-top"
-              alt="image de spaghetti aux tomates cerises et basilic">
-            <div class="card-body">
-              <h5 class="card-title">Pasta</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-                content.</p>
-              <a href="pasta.php" class="btn btn-danger">Nos Pastas</a>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="img/boisson/cup-creamy-cappuccino.jpg" class="card-img-top" alt="image d'un cappuccino">
-            <div class="card-body">
-              <h5 class="card-title">Boisson</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-                content.</p>
-              <a href="boissons.php" class="btn btn-danger">Nos Boissons</a>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="img/dessert/front-view-delicious-tiramisu-concept.jpg" class="card-img-top"
-              alt="Image d'un tiramisu">
-            <div class="card-body">
-              <h5 class="card-title">Dessert</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-                content.</p>
-              <a href="dessert.php" class="btn btn-danger">Nos Desserts</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+<!DOCTYPE html>
+  <html lang="fr">
 
-    
-  <div class="divcard">
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
-    <div>
-      <img class="image-test" src="img/pizza/rb_10219.png" height="350px" width="350px"  alt="pizza">
-    </div>
-    <div>
-      <img class="image-test" src="img/antipasti/high-angle-delicious-cheese-tomatoes.jpg" height="350px" width="350px"  alt="entrée tomates mozza">
-    </div>
-    <div>
-      <img class="image-test" src="img/risotto/healthy-vegetarian-risotto-with-fresh-parsley-garnish-generated-by-ai.jpg" height="350px" width="350px"  alt="entrée tomates mozza">
-    </div>
-    <div>
-      <img class="image-test" src="img/dessert/front-view-delicious-tiramisu-concept.jpg" height="350px" width="350px"  alt="dessert tiramisu">
-    </div>
-    
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The district</title>
+    <link rel="icon" type="image/x-icon" href="img/images_the_district/the_district_brand/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-     
+
+        {% block stylesheets %}
+        <link href="style.css" rel="stylesheet">
+        {% endblock %}
+
+        {% block javascripts %}
+            {% block importmap %}{{ importmap('app') }}{% endblock %}
+        {% endblock %}
+    </head>
+    <body>
+        {% block body %}{% endblock %}
+    </body>
+</html>
