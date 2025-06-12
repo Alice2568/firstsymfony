@@ -2,10 +2,7 @@
 background first
 then body + id specifique à chaque page?*/
 body{
-    background-image:url("img/dark-grunge-texture.jpg");
-    background-repeat: repeat-y;
-    background-size: cover;
-    color: blanchedalmond;
+    background-color: #1E1E1E;
 }
 button {
     padding: 10px 15px;
