@@ -1,0 +1,36 @@
+<footer class="footer">
+    <div class="footer-container">
+
+        <div class="footer-section">
+            <h4>Suivez-nous</h4>
+            <ul class="social-links">
+                <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+                <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+                <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>Plan du site</h4>
+            <ul>
+                <li><a href="{{ path('app_accueil') }}">Accueil</a></li>
+                <li><a href="{{ path('app_category') }}">Menu</a></li>
+                <li><a href="{{ path('app_connexion') }}">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>Contact</h4>
+            <ul>
+                <li>Email : <a href="mailto:contact@thedistrict.com">contact@thedistrict.com</a></li>
+                <li>Téléphone : 01 23 45 67 89</li>
+                <li>Adresse : 123 Rue de Rome, Paris</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; {{ "now"|date("Y") }} The District. Tous droits réservés.</p>
+    </div>
+</footer>
