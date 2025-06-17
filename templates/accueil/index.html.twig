@@ -2,6 +2,7 @@
 
  {% block body %}
  <body>
+ {% include 'partial/_header.html.twig' %}
 
      <div>
     <section class="divcard">
@@ -82,7 +83,7 @@
 
     
   <div class="divcard">
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+   <!-- <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
     <div>
       <img class="image-test" src="img/pizza/rb_10219.png" height="350px" width="350px"  alt="pizza">
     </div>
@@ -94,7 +95,10 @@
     </div>
     <div>
       <img class="image-test" src="img/dessert/front-view-delicious-tiramisu-concept.jpg" height="350px" width="350px"  alt="dessert tiramisu">
+    </div>-->
     </div>
-    
-
+    </div>
+     {% include 'partial/_footer.html.twig' %}
+</body>
  {% endblock %}
+  

@@ -146,55 +146,53 @@ nav.navbar {
 .logo:hover{
     cursor: default;
 }
-.footer {
+footer {
+    flex-shrink: 0;
+    border-top: 1px line #1E1E1E;
     background-color: #2c2c2c;
     color: white;
-    padding: 2rem 1rem;
-    margin-top: 3rem;
-    font-family: sans-serif;
+    width: 100%;
 }
 
-.footer-container {
+.contenu-footer {
+    width: 1200px;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 2rem;
-    max-width: 1200px;
-    margin: auto;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px 0 10px;
 }
 
-.footer-section {
-    flex: 1 1 200px; /* minimum 200px, s’adapte sinon */
+.bloc{
+    width: 25%;
+    margin: 0 30px;
+}
+.footer-contact h4, .footer-media h4, .footer-plan h4 {
+    font-size: 25px;
+    padding-bottom: 20px
 }
 
-.footer-section h4 {
-    margin-bottom: 1rem;
-    font-size: 1.2rem;
+.liste-plan, .liste-media, .liste-contact {
+    list-style-type: none;
+}
+.liste-plan li, .liste-media li, .liste-contact li {
+    padding: 2px 0;
 }
 
-.footer-section ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-section ul li {
-    margin-bottom: 0.5rem;
-}
-
-.footer-section ul li a {
-    color: #ddd;
+.liste-plan a, .liste-media a, .liste-contact a {
     text-decoration: none;
-    transition: color 0.2s ease-in-out;
+    color : rgb(211, 58, 127);
+}
+.liste-plan a:hover, .liste-media a:hover, .liste-contact a:hover{
+    color:beige;
 }
 
-.footer-section ul li a:hover {
-    color: #fff;
-    text-decoration: underline;
+.liste-media img {
+    width: 20px;
 }
 
 .footer-bottom {
     text-align: center;
-    margin-top: 2rem;
     border-top: 1px solid #444;
     padding-top: 1rem;
     font-size: 0.9rem;
