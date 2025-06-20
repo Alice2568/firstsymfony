@@ -49,7 +49,6 @@ form {
 .divwelcome {
     text-align: center;
     border-top: 20px solid;
-    margin-bottom: 10px;
     padding-top: 100px;
     padding-bottom: 90px;
    /* font-family: "Caveat", serif;*/
@@ -96,21 +95,35 @@ nav.navbar {
     border: solid 3px red;
 }
 
+.containerhistoirelogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px; /* espace entre le logo et le texte */
+    padding: 0 10px;
+    flex-wrap: wrap; /* pour que ça reste responsive sur mobile */
+}
 
 .logohistoire {
-    position: absolute;
-width: 701px;
-height: 701px;
-left: -31px;
-top: 194px;
+    width: 450px;
+    max-width: 100%;
+    height: auto;
 }
+.logohistoire img {
+    width: 450px;
+    height: auto;
+    padding-right: 20px;
+}
+
 .histoire {
-position: absolute;
-width: 739px;
-height: 310px;
-left: 681px;
-top: 414px;
+    width: 60%;
+    color: white;
+    padding-bottom: 10px;
+    padding-left: 30px;
 }
+
+
+
 /*/.card:hover{
      faire transition on hover= on hover: img qui zoom et text qui se réduit ne laissant que le bouton pour accéder à la catégorie*/
 .divcard {
@@ -155,9 +168,7 @@ top: 414px;
     cursor: pointer;
 }
 
-.logo:hover{
-    cursor: default;
-}
+
 footer {
     flex-shrink: 0;
     border-top: 1px line #1E1E1E;
