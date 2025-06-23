@@ -26,6 +26,13 @@ class Plat
     #[ORM\Column(length: 255)]
     private ?string $image = null;
 
+    #[ORM\ManyToOne(inversedBy: 'plats')]
+    #[ORM\JoinColumn(nullable: false)]
+    private ?Category $Category = null;
+
+    #[ORM\Column]
+    private ?bool $is_valid = null;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -75,6 +82,30 @@ class Plat
     public function setImage(string $image): static
     {
         $this->image = $image;
+
+        return $this;
+    }
+
+    public function getCategory(): ?Category
+    {
+        return $this->Category;
+    }
+
+    public function setCategory(?Category $Category): static
+    {
+        $this->Category = $Category;
+
+        return $this;
+    }
+
+    public function isValid(): ?bool
+    {
+        return $this->is_valid;
+    }
+
+    public function setIsValid(bool $is_valid): static
+    {
+        $this->is_valid = $is_valid;
 
         return $this;
     }
