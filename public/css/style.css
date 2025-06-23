@@ -121,11 +121,10 @@ nav.navbar {
     padding-bottom: 10px;
     padding-left: 30px;
 }
+.carousel {
+    padding: 0 50px;
+}
 
-
-
-/*/.card:hover{
-     faire transition on hover= on hover: img qui zoom et text qui se réduit ne laissant que le bouton pour accéder à la catégorie*/
 .divcard {
     padding-left: 20px;
     padding-right: 20px;
@@ -133,45 +132,59 @@ nav.navbar {
     padding-bottom: 20px;
 }
 
-.card{
-    max-width: 400px;
-}
-.card-img-top {
-    width: auto;
-    height: fit-content;
-    max-height: 300px;
-    
-}
-.card:hover{
-    transform: scale(1.05);
-}
-
-
-
 .d-block{
-    border-radius: 5%;
-    width: 500px;
-    height: 500px;
+    height: 650px;
 }
 
-.image-test{
+.dish-card{
+    position:relative;
     border: solid 2px white;
     border-radius: 5%;
-    
-    
+    padding-left: 0%;
+    padding-right: 0%;
+    margin: 10px 10px;
+    width: 400px;
 }
-.image-test:hover{
+    
+.dish-card:hover{
     
     transform: scale(1.1);
     border: none;
     transition-duration: 2s;
     cursor: pointer;
 }
+.dish-card img { 
+    width: 100%;
+    object-fit: fill;
+    border-radius: 5%;
+}
+.image-caption {
+    position: absolute;
+    margin-left: 30px;
+    top: 0;
+    left: 0;
+    width: 80%;
+    background-color: black; /* fond noir semi-transparent */
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    opacity: 0%;
+    transition :opacity 0.2s ease-in-out;
+    
+  }
 
+.dish-card:hover .image-caption{
+    opacity: 100%;
+}
+
+.dish-container{
+    margin-left: 10px;
+}
 
 footer {
     flex-shrink: 0;
-    border-top: 1px line #1E1E1E;
+    border-top: 1px solid #1E1E1E;
     background-color: #2c2c2c;
     color: white;
     width: 100%;
