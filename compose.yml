@@ -11,9 +11,15 @@ services:
 
   db:
     image: mariadb:10.6
+    ports:
+      - "3306:3306"
     restart: always
+    volumes:
+      -db_data:/var/lib/mysql
     environment:
       MYSQL_ROOT_PASSWORD: Afpa1234
+      MYSQL_DATABASE: Thedistrict
+      MYSQL_USER: admin
 
   phpmyadmin:
     image: phpmyadmin

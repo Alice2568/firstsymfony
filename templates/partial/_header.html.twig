@@ -12,7 +12,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link text-light" aria-current="page" href="accueil.php">Accueil</a>
+            <a class="nav-link text-light" aria-current="page" href="{{ path('app_accueil') }}">Accueil</a>
           </li>
           <li class="nav-item ">
             <a class="nav-link text-light" href="categories.php">Catégories</a>
@@ -32,13 +32,13 @@
   
           </li>
           <li class="nav-item ">
-            <a class="nav-link text-light" href="{{ path('app_connexion') }}">Contact</a>
+            <a class="nav-link text-light" href="{{ path('app_contact') }}">Contact</a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link text-light" href="{{ path('app_connexion') }}">Mon Compte</a>
+            <a class="nav-link text-light" href="{{ path('app_login') }}">Mon Compte</a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link text-light" href="{{ path('app_connexion') }}"><img
+            <a class="nav-link text-light" href="{{ path('app_login') }}"><img
           src="img/shopping_1.png" height="30" width="30"
           alt="logo restaurant the district"></a>
           </li>

@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+{% block title %}Register{% endblock %}
+ {% block body %}
+
+ {% include 'partial/_header.html.twig' %}
+<h2>Bienvenue {{user.prenom}}, votre inscription n'a pas pu être validé</h2>
+
+<p><a href={{ path('app_register')}}>Retour à la page d'inscription</a></p>
+
+  {% include 'partial/_footer.html.twig' %}
+
+ {% endblock %}

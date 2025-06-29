@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+{% block title %}Register{% endblock %}
+ {% block body %}
+
+ {% include 'partial/_header.html.twig' %}
+<h2>Bienvenue {{user.prenom}}</h2>
+
+<p><a href={{ path('app_accueil')}}>Retour à l'app_accueil</a></p>
+
+  {% include 'partial/_footer.html.twig' %}
+
+ {% endblock %}

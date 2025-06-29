@@ -1,0 +1,6 @@
+<h1>Activation de votre compte client The district</h1>
+<p> Bienvenue {{ user.prenom }}!!</p>
+<p> Pour activer votre compte client The district cliquez sur le lien ci-dessous.</p>
+<p><a href="{{ absolute_url(path('verify_user', {token: token})) }}">Lien d'activation</a></p>
+{{ token }}
+<p>Merci ! Et on vous souhaite une bonne aventure culinaire parmis nous !</p>
