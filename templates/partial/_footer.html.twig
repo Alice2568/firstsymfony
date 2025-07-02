@@ -1,5 +1,51 @@
-<footer>
-    <div class="contenu-footer row">
+<div class="container ">
+    <footer class="py-5">
+        <div class="row">
+            <div class="col-6 col-md-2 mb-3">
+                <h5>Suivez-nous</h5>
+                <ul class="nav flex-column liste-media">
+                <li class="nav-item mb-2"><a href="https://facebook.com" target="_blank"><img src="/img/fb.png" alt="icone facebook" class="img-footer"> Facebook</a></li>
+                <li class="nav-item mb-2"><a href="https://instagram.com" target="_blank"><img src="/img/insta.png" alt="icone instagram" class="img-footer"> Instagram</a></li>
+                <li class="nav-item mb-2"><a href="https://twitter.com" target="_blank"><img src="/img/xlogo.jpg" alt="icone x" class="img-footer"> Twitter</a></li>
+                <li class="nav-item mb-2"><a href="https://linkedin.com" target="_blank"><img src="/img/linkedin.png" alt="icone linkedin" class="img-footer"> Linkedin</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md-2 mb-3">
+                <h5>Plan du site</h5>
+               <ul class="liste-plan nav flex-column">
+                <li class="nav-item mb-2"><a href="{{ path('app_accueil') }}">Accueil</a></li>
+                <li class="nav-item mb-2"><a href="{{ path('app_category_index') }}">Menu</a></li>
+                <li class="nav-item mb-2"><a href="{{ path('app_connexion') }}">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md-2 mb-3">
+                <h4>Contact</h4>
+            <ul class="liste-contact nav flex-column">
+                <li>Email : <a href="mailto:contact@thedistrict.com">contact@thedistrict.com</a></li>
+                <li>Téléphone : 01 23 45 67 89</li>
+                <li>Adresse : 123 Rue de Rome, Paris</li>
+                <li>horaires : 24h/24h</li>
+                </ul>
+            </div>
+            <div class="col-md-5 offset-md-1 mb-3">
+                <form>
+                    <h5>Recevez nos Offres</h5>
+                    <p>Restez au courant de nos dernières offres et promotions</p>
+                    <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                        <label for="newsletter1" class="visually-hidden">Email</label>
+                        <input id="newsletter1" type="email" class="form-control" placeholder="votre adresse mail">
+                        <button class="btn btn-primary" type="button">S'inscrire</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+        <p>&copy; {{ "now"|date("Y") }} The District. Tous droits réservés.</p>
+    </div>
+    </footer>
+</div>
+<!--<footer>
+    <div class="container">
 
         <div class="bloc footer-media col-sm-12 col-md-4">
             <h4>Suivez-nous</h4>
