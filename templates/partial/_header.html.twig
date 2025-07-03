@@ -1,9 +1,9 @@
-<body>
+
 <header>
   <nav class="navbar navbar-expand-md bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand logo text-light" href="{{ path('app_accueil') }}" ><img
-          src="img/images_the_district/the_district_brand/logo.png" height="30" width="30"
+          src="{{ asset('img/images_the_district/the_district_brand/logo.png') }}" height="30" width="30"
           alt="logo restaurant the district"> District</a>
       <button class="navbar-toggler btn-outline-danger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -15,14 +15,14 @@
             <a class="nav-link text-light" aria-current="page" href="{{ path('app_accueil') }}">Accueil</a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link text-light" href="categories.php">Catégories</a>
+            <a class="nav-link text-light" href="{{ path('app_category_index') }}">Catégories</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link text-light dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Plats
             </a>
             <ul class="dropdown-menu dropdown-menu-dark">
-              <li><a class="dropdown-item" href="antipasti.php">Antipastis</a></li>
+              <li><a class="dropdown-item" href="{{ path('app_category_show', {slug: 'antipastis'}) }}">Antipastis</a></li>
               <li><a class="dropdown-item" href="pizza.php">Pizza</a></li>
               <li><a class="dropdown-item" href="risotto.php">Risotto</a></li>
               <li><a class="dropdown-item" href="pasta.php">Pasta</a></li>
@@ -39,7 +39,7 @@
           </li>
           <li class="nav-item ">
             <a class="nav-link text-light" href="{{ path('app_login') }}"><img
-          src="img/shopping_1.png" height="30" width="30"
+          src="{{asset('img/shopping_1.png')}}" height="30" width="30"
           alt="logo restaurant the district"></a>
           </li>
         </ul>
@@ -48,7 +48,7 @@
   </nav>
   <div class="divwelcome">
     <video autoplay muted loop id="background-video">
-      <source src="img/081454429-eating-salami-pizza-stop-motio.mp4" type="video/mp4">
+      <source src="{{asset ('img/081454429-eating-salami-pizza-stop-motio.mp4') }}" type="video/mp4">
     </video>
 
 

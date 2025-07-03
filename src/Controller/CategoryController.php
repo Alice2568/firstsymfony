@@ -42,11 +42,16 @@ final class CategoryController extends AbstractController
         ]);
     }
 
-    #[Route('/{id}', name: 'app_category_show', methods: ['GET'])]
-    public function show(Category $category): Response
-    {
+    #[Route('/{slug}', name: 'app_category_show', methods: ['GET'])]
+    public function show(string $slug, Category $category, CategoryRepository $repo): Response
+    {   
+        $category = $repo->findOneBy(['slug' =>$slug]);
+        if (!$category) {
+            throw $this->createNotFoundException();
+        }
         return $this->render('category/show.html.twig', [
             'category' => $category,
+            'plats' =>$category->getPlats(),
         ]);
     }
 

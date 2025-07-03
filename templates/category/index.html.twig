@@ -1,1 +1,28 @@
 {% extends 'base.html.twig' %}
+
+ {% block body %}
+
+ {% include 'partial/_header.html.twig' %}
+ 
+<div class="d-flex align-items-center my-4">
+  <hr class="flex-grow-1 border-white">
+  <h3 class="mx-3 text-white text-center">Nos Catégories</h3>
+  <hr class="flex-grow-1 border-white">
+</div>
+      
+  <div class="divcard">
+    <div class="dish-container row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-4 justify-content-center">
+    {% for category in categories %}
+    <div class="dish-card">
+    <a href="{{ path('app_category_show', {slug : category.slug}) }}">
+      <img class="image-test" src="{{ asset('img/antipasti/snacks-set-wooden-board.jpg') }}" height="350px" width="350px"  alt="{{ category.nom }}">
+      <div class="image-caption">{{ category.nom}}</div></a>
+      </div>
+    {% endfor %}
+    
+    </div>
+    </div>
+     {% include 'partial/_footer.html.twig' %}
+
+ {% endblock %}
+  

@@ -15,6 +15,19 @@ class PlatRepository extends ServiceEntityRepository
     {
         parent::__construct($registry, Plat::class);
     }
+            // src/Repository/PlatRepository.php
+
+public function findRandomPlats(int $nombre = 6): array
+{
+    return $this->createQueryBuilder('p')
+        ->andWhere('p.isValid = true') // si tu filtres par plats valides
+        ->addSelect('RAND() as HIDDEN rand')
+        ->orderBy('rand')
+        ->setMaxResults($nombre)
+        ->getQuery()
+        ->getResult()
+    ;
+}
 
     //    /**
     //     * @return Plat[] Returns an array of Plat objects
