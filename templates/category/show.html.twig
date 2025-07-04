@@ -6,7 +6,7 @@
  
 <div class="d-flex align-items-center my-4">
   <hr class="flex-grow-1 border-white">
-  <h3 class="mx-3 text-white text-center">Nos Antipastis</h3>
+  <h3 class="mx-3 text-white text-center">Nos {{category.nom}}s</h3>
   <hr class="flex-grow-1 border-white">
 </div>
       
@@ -14,7 +14,7 @@
     <div class="dish-container row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-4 justify-content-center">
     {% for plat in plats %}
     <div class="dish-card">
-      <img class="image-test" src="{{ asset('img/antipasti/snacks-set-wooden-board.jpg') }}" height="350px" width="350px"  alt="{{ plat.libelle}}">
+      <img class="image-test" src="{{ plat.image }}" height="350px" width="350px"  alt="{{ plat.libelle}}">
       <div class="image-caption">{{ plat.libelle}}</div>
       </div>
     {% endfor %}

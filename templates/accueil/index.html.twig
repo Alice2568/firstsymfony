@@ -18,22 +18,32 @@
   <div class="carousel-inner">
     <div class="carousel-item active">
     <a href="{{ path('app_category_show', { slug: 'antipastis'})}}">
-      <img src="/img/antipasti/antipastipays1.jpg" class="d-block w-100" alt="antipastis"></a>
+      <img src="/img/antipasti/mozzadibufala.jpg" class="d-block w-100" alt="antipastis"></a>
     </div>
+     
     <div class="carousel-item">
-      <img src="/img/pizza/3790.jpg" class="d-block w-100" alt="pizza">
+      <a href="{{ path('app_category_show', { slug: 'pizza'})}}">
+      <img src="/img/pizza/3790.jpg" class="d-block w-100" alt="pizza"></a>
     </div>
+     
     <div class="carousel-item">
-      <img src="img/pasta/2332.jpg" class="d-block w-100" alt="pasta">
+      <a href="{{ path('app_category_show', { slug: 'pasta'})}}">
+      <img src="/img/pasta/2332.jpg" class="d-block w-100" alt="pasta"></a>
     </div>
+     
     <div class="carousel-item">
-      <img src="img/risotto/22765.jpg" class="d-block w-100" alt="risotto">
+      <a href="{{ path('app_category_show', { slug: 'risotto'})}}">
+      <img src="/img/risotto/22765.jpg" class="d-block w-100" alt="risotto"></a>
     </div>
+     
     <div class="carousel-item">
-      <img src="img/boisson/2909.jpg" class="d-block w-100" alt="boisson">
+      <a href="{{ path('app_category_show', { slug: 'boisson'})}}">
+      <img src="/img/boisson/2909.jpg" class="d-block w-100" alt="boisson"></a>
     </div>
+     
     <div class="carousel-item">
-      <img src="img/dessert/29211.jpg" class="d-block w-100" alt="dessert">
+      <a href="{{ path('app_category_show', { slug: 'dessert'})}}">
+      <img src="/img/dessert/29211.jpg" class="d-block w-100" alt="dessert"></a>
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -55,7 +65,7 @@
     <div class="dish-container row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-4 justify-content-center">
     {% for plat in plats %}
     <div class="dish-card">
-      <img class="image-test" src="img/antipasti/snacks-set-wooden-board.jpg" height="350px" width="350px"  alt="{{ plat.libelle}}">
+      <img class="image-test" src="{{ plat.image }}" height="350px" width="350px"  alt="{{ plat.libelle}}">
       <div class="image-caption">{{ plat.libelle}}</div>
       </div>
     {% endfor %}

@@ -13,20 +13,21 @@ class CategoryFixtures extends Fixture
 
     public function load(ObjectManager $manager): void
     {
-        $this->createCategory('Antipastis', $manager);
-        $this->createCategory('Pizza', $manager);
-        $this->createCategory('Pasta', $manager);
-        $this->createCategory('Risotto', $manager);
-        $this->createCategory('Dessert', $manager);
-        $this->createCategory('Boisson', $manager);
+        $this->createCategory('Antipasti','/img/antipasti/4779.jpg', $manager);
+        $this->createCategory('Pizza','/img/pizza/vege.jpg', $manager);
+        $this->createCategory('Pasta','/img/pasta/main.jpg', $manager);
+        $this->createCategory('Risotto','/img/risotto/22765.jpg', $manager);
+        $this->createCategory('Dessert','/img/dessert/29211.jpg', $manager);
+        $this->createCategory('Boisson','/img/boisson/2909.jpg', $manager);
 
 
         $manager->flush();
     }
-public function createCategory(string $nom, ObjectManager $manager)
+public function createCategory(string $nom, string $image, ObjectManager $manager)
 {
             $category = new Category();
             $category->setNom($nom);
+            $category->setImage($image);
             $category->setSlug(strtolower($this->slugger->slug($nom)));
 
             $manager->persist($category);

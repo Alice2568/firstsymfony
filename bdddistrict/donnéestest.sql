@@ -17,42 +17,42 @@ INSERT INTO categorie (nom) VALUES
 
 -- Antipastis (id catégorie = 1)
 INSERT INTO plat (libelle, description, prix, image, is_valid, category_id, slug) VALUES
-('Bruschetta', 'Pain grillé avec tomates, ail et basilic', 6.50, 'bruschetta.jpg', TRUE, 1, 'bruschetta'),
-('Carpaccio de bœuf', 'Tranches fines de bœuf, parmesan et roquette', 9.00, 'carpaccio.jpg', TRUE, 1, 'carpaccio_de_boeuf'),
-('Antipasto misto', 'Assortiment de charcuterie et fromages italiens', 12.00, 'antipasto.jpg', TRUE, 1, 'antipasto_misto'),
-('Mozzarella di Bufala', 'Mozzarella servie avec tomates cerises et basilic', 8.00, 'mozzarella.jpg', TRUE, 1, 'mozzarella_di_buffala'),
-('Arancini', 'Boulettes de riz farcies, panées et frites', 7.00, 'arancini.jpg', TRUE, 1, 'arancini'),
-('Frittata', 'Omelette italienne aux légumes', 6.00, 'frittata.jpg', TRUE, 1, 'frittata'),
-('Salade Caprese', 'Tomate, mozzarella et basilic', 7.50, 'caprese.jpg', TRUE, 1, 'salade_caprese'),
-('Crostini Toscani', 'Petites tartines avec foie de volaille', 6.50, 'crostini.jpg', TRUE, 1, 'crostini_toscani'),
-('Involtini di Melanzane', 'Aubergines roulées farcies', 8.00, 'involtini.jpg', TRUE, 1, 'involtini_di_melanzane'),
-('Olives marinées', 'Olives vertes et noires à l’huile d’olive', 4.50, 'olives.jpg', TRUE, 1, 'olives_marinés');
+('Bruschetta', 'Pain grillé avec tomates, ail et basilic', 6.50, '/img/antipasti/Bruschetta.jpg', TRUE, 1, 'bruschetta'),
+('Carpaccio de bœuf', 'Tranches fines de bœuf, parmesan et roquette', 9.00, '/img/antipasti/carpaccio.jpg', TRUE, 1, 'carpaccio_de_boeuf'),
+('Antipasto misto', 'Assortiment de charcuterie et fromages italiens', 12.00, '/img/antipasti/antipastimisto.jpg', TRUE, 1, 'antipasto_misto'),
+('Mozzarella di Bufala', 'Mozzarella servie avec tomates cerises et basilic', 8.00, '/img/antipasti/mozzadibufala.jpg', TRUE, 1, 'mozzarella_di_buffala'),
+('Arancini', 'Boulettes de riz farcies, panées et frites', 7.00, '/img/antipasti/arancini.jpg', TRUE, 1, 'arancini'),
+('Frittata', 'Omelette italienne aux légumes', 6.00, '/img/antipasti/frittata.jpg', TRUE, 1, 'frittata'),
+('Salade Caprese', 'Tomate, mozzarella et basilic', 7.50, '/img/antipasti/capresesalad.jpg', TRUE, 1, 'salade_caprese'),
+('Crostini Toscani', 'Petites tartines avec foie de volaille', 6.50, '/img/antipasti/crostinitoscani.jpg', TRUE, 1, 'crostini_toscani'),
+('Involtini di Melanzane', 'Aubergines roulées farcies', 8.00, '/img/antipasti/involtini.jpg', TRUE, 1, 'involtini_di_melanzane'),
+('Olives marinées', 'Olives vertes et noires à l’huile d’olive', 4.50, '/img/antipasti/olives.jpg', TRUE, 1, 'olives_marinés');
 
 -- Pizza (id catégorie = 2)
 INSERT INTO plat (libelle, description, prix, image, is_valid, category_id, slug) VALUES
-('Margherita', 'Tomate, mozzarella, basilic', 9.00, 'margherita.jpg', TRUE, 2,'margherita'),
-('Quattro Stagioni', 'Artichauts, champignons, jambon, olives', 12.00, '4stagioni.jpg', TRUE, 2, 'quattro_stagioni'),
-('Diavola', 'Salami piquant, mozzarella, tomate', 11.00, 'diavola.jpg', TRUE, 2, 'diavola'),
-('Capricciosa', 'Jambon, champignons, artichauts, œuf', 12.50, 'capricciosa.jpg', TRUE, 2, 'capricciosa'),
-('Prosciutto e Funghi', 'Jambon et champignons', 11.00, 'prosciutto_funghi.jpg', TRUE, 2, 'proscuitto_e_funghi'),
-('Quattro Formaggi', 'Mozzarella, gorgonzola, parmesan, provolone', 12.00, '4formaggi.jpg', TRUE, 2, 'quattro_formaggi'),
-('Napolitaine', 'Anchois, câpres, olives noires', 10.00, 'napolitaine.jpg', TRUE, 2, 'napolitaine'),
-('Calzone', 'Pizza repliée avec jambon et fromage', 11.50, 'calzone.jpg', TRUE, 2, 'calzone'),
-('Pizza Truffe', 'Crème de truffe, champignons, mozzarella', 14.00, 'truffe.jpg', TRUE, 2, 'pizza_truffe'),
-('Pizza Végétarienne', 'Légumes grillés, mozzarella', 10.50, 'vegetarienne.jpg', TRUE, 2, 'pizza_vegetarienne');
+('Margherita', 'Tomate, mozzarella, basilic', 9.00, '/img/pizza/margherita.jpg', TRUE, 2,'margherita'),
+('Quattro Stagioni', 'Artichauts, champignons, jambon, olives', 12.00, '/img/pizza/4stagioni.jpg', TRUE, 2, 'quattro_stagioni'),
+('Diavola', 'Salami piquant, mozzarella, tomate', 11.00, '/img/pizza/diavola.jpg', TRUE, 2, 'diavola'),
+('Capricciosa', 'Jambon, champignons, artichauts, œuf', 12.50, '/img/pizza/capriciosa.jpg', TRUE, 2, 'capricciosa'),
+('Prosciutto e Funghi', 'Jambon et champignons', 11.00, '/img/pizza/formaggifunghi.jpg', TRUE, 2, 'proscuitto_e_funghi'),
+('Quattro Formaggi', 'Mozzarella, gorgonzola, parmesan, provolone', 12.00, '/img/pizza/4formaggi.jpg', TRUE, 2, 'quattro_formaggi'),
+('Napolitaine', 'Anchois, câpres, olives noires', 10.00, '/img/pizza/napolitaie.jpg', TRUE, 2, 'napolitaine'),
+('Calzone', 'Pizza repliée avec jambon et fromage', 11.50, '/img/pizza/calzone.jpg', TRUE, 2, 'calzone'),
+('Pizza Truffe', 'Crème de truffe, champignons, mozzarella', 14.00, '/img/pizza/pizzatrufe.jpg', TRUE, 2, 'pizza_truffe'),
+('Pizza Végétarienne', 'Légumes grillés, mozzarella', 10.50, '/img/pizza/vege.jpg', TRUE, 2, 'pizza_vegetarienne');
 
 -- Pasta (id catégorie = 3)
 INSERT INTO plat (libelle, description, prix, image, is_valid, category_id, slug) VALUES
-('Spaghetti Carbonara', 'Crème, œuf, pancetta, parmesan', 11.00, 'carbonara.jpg', TRUE, 3, 'spaghetti_carbonara'),
-('Tagliatelle al Ragù', 'Sauce bolognaise maison', 12.00, 'ragu.jpg', TRUE, 3, 'tagliatelle_al_ragu'),
-('Penne all’Arrabbiata', 'Sauce tomate épicée', 10.00, 'arrabbiata.jpg', TRUE, 3, 'penne_allarrabiata'),
-('Lasagnes', 'Pâtes gratinées à la viande et béchamel', 13.00, 'lasagne.jpg', TRUE, 3, 'lasagnes'),
-('Spaghetti alle Vongole', 'Palourdes, ail, persil', 14.00, 'vongole.jpg', TRUE, 3, 'spaghetti_alle_vongole'),
-('Tortellini alla panna', 'Tortellini à la crème et jambon', 12.50, 'tortellini.jpg', TRUE, 3, 'tortellini_alla_panna'),
-('Fusilli al Pesto', 'Sauce pesto maison et parmesan', 11.00, 'pesto.jpg', TRUE, 3, 'fusilli_al_pesto'),
-('Ravioli ricotta épinards', 'Servis avec beurre et sauge', 13.00, 'ravioli.jpg', TRUE, 3, 'ravioli_ricotta_epinards'),
-('Gnocchi al Gorgonzola', 'Sauce gorgonzola et noix', 12.50, 'gnocchi.jpg', TRUE, 3, 'gnocchi_al_gorgonzola'),
-('Spaghetti à la puttanesca', 'Tomates, olives, câpres, anchois', 11.50, 'puttanesca.jpg', TRUE, 3, 'spaghetti_a_la_puttanesca');
+('Spaghetti Carbonara', 'Crème, œuf, pancetta, parmesan', 11.00, '/img/pasta/carbonara.jpg', TRUE, 3, 'spaghetti_carbonara'),
+('Tagliatelle al Ragù', 'Sauce bolognaise maison', 12.00, '/img/pasta/ragu.jpg', TRUE, 3, 'tagliatelle_al_ragu'),
+('Penne all’Arrabbiata', 'Sauce tomate épicée', 10.00, '/img/pasta/arrabbiata.jpg', TRUE, 3, 'penne_allarrabiata'),
+('Lasagnes', 'Pâtes gratinées à la viande et béchamel', 13.00, '/img/pasta/lasagne.jpg', TRUE, 3, 'lasagnes'),
+('Spaghetti alle Vongole', 'Palourdes, ail, persil', 14.00, '/img/pasta/vongole.jpg', TRUE, 3, 'spaghetti_alle_vongole'),
+('Tortellini alla panna', 'Tortellini à la crème et jambon', 12.50, '/img/pasta/tortellini.jpg', TRUE, 3, 'tortellini_alla_panna'),
+('Fusilli al Pesto', 'Sauce pesto maison et parmesan', 11.00, '/img/pasta/pesto.jpg', TRUE, 3, 'fusilli_al_pesto'),
+('Ravioli ricotta épinards', 'Servis avec beurre et sauge', 13.00, '/img/pasta/ravioli.jpg', TRUE, 3, 'ravioli_ricotta_epinards'),
+('Gnocchi al Gorgonzola', 'Sauce gorgonzola et noix', 12.50, '/img/pasta/gnocchi.jpg', TRUE, 3, 'gnocchi_al_gorgonzola'),
+('Spaghetti à la puttanesca', 'Tomates, olives, câpres, anchois', 11.50, '/img/pasta/puttanesca.jpg', TRUE, 3, 'spaghetti_a_la_puttanesca');
 
 -- Risotto (id catégorie = 4)
 INSERT INTO plat (libelle, description, prix, image, is_valid, category_id, slug) VALUES

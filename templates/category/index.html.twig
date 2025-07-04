@@ -15,7 +15,7 @@
     {% for category in categories %}
     <div class="dish-card">
     <a href="{{ path('app_category_show', {slug : category.slug}) }}">
-      <img class="image-test" src="{{ asset('img/antipasti/snacks-set-wooden-board.jpg') }}" height="350px" width="350px"  alt="{{ category.nom }}">
+      <img class="image-test" src="{{ category.image }}" height="350px" width="350px"  alt="{{ category.nom }}">
       <div class="image-caption">{{ category.nom}}</div></a>
       </div>
     {% endfor %}
