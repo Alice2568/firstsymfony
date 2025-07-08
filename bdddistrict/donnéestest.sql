@@ -56,39 +56,39 @@ INSERT INTO plat (libelle, description, prix, image, is_valid, category_id, slug
 
 -- Risotto (id catégorie = 4)
 INSERT INTO plat (libelle, description, prix, image, is_valid, category_id, slug) VALUES
-('Risotto alla Milanese', 'Safran, parmesan', 12.00, 'milanese.jpg', TRUE, 4, 'risotto_alla_milanese'),
-('Risotto aux champignons', 'Champignons, ail, persil', 13.00, 'champignons.jpg', TRUE, 4, 'risotto_aux_champignons'),
-('Risotto aux fruits de mer', 'Calamars, crevettes, moules', 14.50, 'mare.jpg', TRUE, 4, 'risotto_aux_fruits_de_mer'),
-('Risotto au gorgonzola et noix', 'Crèmeux et fondant', 13.50, 'gorgonzola_noix.jpg', TRUE, 4, 'risotto_au_gorgonzola_et_noix'),
-('Risotto aux asperges', 'Asperges vertes, parmesan', 12.50, 'asperges.jpg', TRUE, 4, 'risotto_aux_asperges'),
-('Risotto courgettes et menthe', 'Léger et rafraîchissant', 12.00, 'courgette.jpg', TRUE, 4, 'risotto_courgettes_et_menthe'),
-('Risotto au potiron', 'Crémeux au potiron', 11.50, 'potiron.jpg', TRUE, 4, 'risotto_au_potiron'),
-('Risotto aux truffes', 'Crème de truffe, parmesan', 15.00, 'truffes.jpg', TRUE, 4, 'risotto_aux_truffes'),
-('Risotto aux artichauts', 'Fond d’artichaut et herbes', 13.00, 'artichaut.jpg', TRUE, 4, 'risotto_aux_artichauts'),
-('Risotto citron et crevettes', 'Zeste de citron, crevettes grillées', 14.00, 'citron_crevettes.jpg', TRUE, 4, 'risotto_citron_et_crevettes');
+('Risotto alla Milanese', 'Safran, parmesan', 12.00, '/img/risotto/milanese.jpg', TRUE, 4, 'risotto_alla_milanese'),
+('Risotto aux champignons', 'Champignons, ail, persil', 13.00, '/img/risotto/champignons.jpg', TRUE, 4, 'risotto_aux_champignons'),
+('Risotto aux fruits de mer', 'Calamars, crevettes, moules', 14.50, '/img/risotto/mare.jpg', TRUE, 4, 'risotto_aux_fruits_de_mer'),
+('Risotto au gorgonzola et noix', 'Crèmeux et fondant', 13.50, '/img/risotto/gorgonzola_noix.jpg', TRUE, 4, 'risotto_au_gorgonzola_et_noix'),
+('Risotto aux asperges', 'Asperges vertes, parmesan', 12.50, '/img/risotto/asperges.jpg', TRUE, 4, 'risotto_aux_asperges'),
+('Risotto courgettes et menthe', 'Léger et rafraîchissant', 12.00, '/img/risotto/courgette.jpg', TRUE, 4, 'risotto_courgettes_et_menthe'),
+('Risotto au potiron', 'Crémeux au potiron', 11.50, '/img/risotto/potiron.jpg', TRUE, 4, 'risotto_au_potiron'),
+('Risotto aux truffes', 'Crème de truffe, parmesan', 15.00, '/img/risotto/truffes.jpg', TRUE, 4, 'risotto_aux_truffes'),
+('Risotto aux artichauts', 'Fond d’artichaut et herbes', 13.00, '/img/risotto/artichaut.jpg', TRUE, 4, 'risotto_aux_artichauts'),
+('Risotto citron et crevettes', 'Zeste de citron, crevettes grillées', 14.00, '/img/risotto/citron_crevettes.jpg', TRUE, 4, 'risotto_citron_et_crevettes');
 
 -- Dessert (id catégorie = 5)
 INSERT INTO plat (libelle, description, prix, image, is_valid, category_id, slug) VALUES
-('Tiramisu', 'Dessert italien au café et mascarpone', 6.00, 'tiramisu.jpg', TRUE, 5, 'tiramisu'),
-('Panna Cotta', 'Crème cuite vanillée et coulis de fruits rouges', 5.50, 'pannacotta.jpg', TRUE, 5, 'panna_cotta'),
-('Cannoli Siciliani', 'Pâtisserie fourrée à la ricotta', 6.50, 'cannoli.jpg', TRUE, 5, 'cannoli_siciliani'),
-('Gelato', 'Glace italienne artisanale', 5.00, 'gelato.jpg', TRUE, 5, 'gelato'),
-('Zabaione', 'Crème mousseuse au marsala', 5.50, 'zabaione.jpg', TRUE, 5, 'zabaione'),
-('Affogato al caffè', 'Glace vanille avec expresso chaud', 5.00, 'affogato.jpg', TRUE, 5, 'affogato_al_caffe'),
-('Torta della Nonna', 'Tarte à la crème pâtissière et pignons', 6.00, 'nonna.jpg', TRUE, 5, 'torta_della_nonna'),
-('Semifreddo', 'Dessert glacé au chocolat', 6.00, 'semifreddo.jpg', TRUE, 5, 'semifreddo'),
-('Granita Sicilienne', 'Glace pilée citron ou amande', 4.50, 'granita.jpg', TRUE, 5, 'granita_sicilienne'),
-('Tarte au citron meringuée', 'Version italienne maison', 5.50, 'citron.jpg', TRUE, 5, 'tarte_au_citron_meringuee');
+('Tiramisu', 'Dessert italien au café et mascarpone', 6.00, '/img/dessert/tiramisu.jpg', TRUE, 5, 'tiramisu'),
+('Panna Cotta', 'Crème cuite vanillée et coulis de fruits rouges', 5.50, '/img/dessert/pannacotta.jpg', TRUE, 5, 'panna_cotta'),
+('Cannoli Siciliani', 'Pâtisserie fourrée à la ricotta', 6.50, '/img/dessert/cannoli.jpg', TRUE, 5, 'cannoli_siciliani'),
+('Gelato', 'Glace italienne artisanale', 5.00, '/img/dessert/gelato.jpg', TRUE, 5, 'gelato'),
+('Zabaione', 'Crème mousseuse au marsala', 5.50, '/img/dessert/zabaione.jpg', TRUE, 5, 'zabaione'),
+('Affogato al caffè', 'Glace vanille avec expresso chaud', 5.00, '/img/dessert/affogato.jpg', TRUE, 5, 'affogato_al_caffe'),
+('Torta della Nonna', 'Tarte à la crème pâtissière et pignons', 6.00, '/img/dessert/nonna.jpg', TRUE, 5, 'torta_della_nonna'),
+('Semifreddo', 'Dessert glacé au chocolat', 6.00, '/img/dessert/semifreddo.jpg', TRUE, 5, 'semifreddo'),
+('Granita Sicilienne', 'Glace pilée citron ou amande', 4.50, '/img/dessert/granita.jpg', TRUE, 5, 'granita_sicilienne'),
+('Tarte au citron meringuée', 'Version italienne maison', 5.50, '/img/dessert/citron.jpg', TRUE, 5, 'tarte_au_citron_meringuee');
 
 -- Boissons (id catégorie = 6)
 INSERT INTO plat (libelle, description, prix, image, is_valid, category_id, slug) VALUES
-('Eau plate San Pellegrino', '50cl', 2.00, 'eau.jpg', TRUE, 6, 'eau_plate_san_pellegrino'),
-('Eau gazeuse Perrier', '50cl', 2.50, 'perrier.jpg', TRUE, 6, 'eau_gazeuse_perrier'),
-('Coca-Cola', '33cl', 2.50, 'coca.jpg', TRUE, 6, 'coca_cola'),
-('Fanta orange', '33cl', 2.50, 'fanta.jpg', TRUE, 6, 'fanta_orange'),
-('Thé glacé maison', 'Saveur citron ou pêche', 3.00, 'theglace.jpg', TRUE, 6, 'the_glace_maison'),
-('Jus d’orange pressé', 'Frais', 3.50, 'jusorange.jpg', TRUE, 6, 'jus_d_orange_presse'),
-('Limoncello', 'Digestif italien', 4.00, 'limoncello.jpg', TRUE, 6, 'limoncello'),
-('Vin rouge Chianti', 'Verre 12cl', 4.50, 'chianti.jpg', TRUE, 6, 'vin_rouge_chianti'),
-('Vin blanc Pinot Grigio', 'Verre 12cl', 4.50, 'pinot.jpg', TRUE, 6, 'vin_blanc_pinot_grigio'),
-('Espresso', 'Café serré italien', 2.00, 'espresso.jpg', TRUE, 6, 'espresso');
+('Eau plate San Pellegrino', '50cl', 2.00, '/img/boisson/eau.jpg', TRUE, 6, 'eau_plate_san_pellegrino'),
+('Eau gazeuse Perrier', '50cl', 2.50, '/img/boisson/perrier.jpg', TRUE, 6, 'eau_gazeuse_perrier'),
+('Coca-Cola', '33cl', 2.50, '/img/boisson/coca.jpg', TRUE, 6, 'coca_cola'),
+('Fanta orange', '33cl', 2.50, '/img/boisson/fanta.jpg', TRUE, 6, 'fanta_orange'),
+('Thé glacé maison', 'Saveur citron ou pêche', 3.00, '/img/boisson/theglace.jpg', TRUE, 6, 'the_glace_maison'),
+('Jus d’orange pressé', 'Frais', 3.50, '/img/boisson/jusorange.jpg', TRUE, 6, 'jus_d_orange_presse'),
+('Limoncello', 'Digestif italien', 4.00, '/img/boisson/limoncello.jpg', TRUE, 6, 'limoncello'),
+('Vin rouge Chianti', 'Verre 12cl', 4.50, '/img/boisson/chianti.jpg', TRUE, 6, 'vin_rouge_chianti'),
+('Vin blanc Pinot Grigio', 'Verre 12cl', 4.50, '/img/boisson/pinot.jpg', TRUE, 6, 'vin_blanc_pinot_grigio'),
+('Espresso', 'Café serré italien', 2.00, '/img/boisson/espresso.jpg', TRUE, 6, 'espresso');

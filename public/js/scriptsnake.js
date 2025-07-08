@@ -2,7 +2,7 @@
 const canvas = document.querySelector("canvas")
 const context = canvas.getContext('2d')
 const apple = new Image();
-apple.src = "applered.png"
+apple.src = "/img/easteregg/applered.png"
 
 let box = 20
 

@@ -10,17 +10,31 @@
   <hr class="flex-grow-1 border-white">
 </div>
       
-  <div class="divcard">
-    <div class="dish-container row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-4 justify-content-center">
+  <div class="divcard row justify-content-center justify-content-evenly">
+    <!--div class="dish-container row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-4 justify-content-center"-->
     {% for plat in plats %}
-    <div class="dish-card">
-      <img class="image-test" src="{{ plat.image }}" height="350px" width="350px"  alt="{{ plat.libelle}}">
-      <div class="image-caption">{{ plat.libelle}}</div>
+    <div class="card mb-3" style="background-color: bisque; max-width: 540px; max-height: 170px; height: 170px;">
+      <div class="row g-0 h-100">
+        <div class="col-md-4 col-sm-6 h-100">
+          <img src="{{ plat.image }}" class="img-fluid h-100 object-fit-cover rounded-start" alt="{{ plat.libelle }}">
+        </div>
+        <div class="col-md-8 col-sm-6 ">
+          <div class="card-body d-flex flex-column justify-content-between h-100">
+            <div>
+              <h5 class="card-title">{{ plat.libelle }}</h5>
+              <p class="card-text">{{ plat.description }}</p>
+            </div>
+            <div>
+              <button >Ajouter au panier</button>
+            </div>
+          </div>
+        </div>
       </div>
-    {% endfor %}
+    </div>
+  {% endfor %}
     
     </div>
-    </div>
+    <!--/div-->
      {% include 'partial/_footer.html.twig' %}
 
  {% endblock %}
