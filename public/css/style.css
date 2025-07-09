@@ -189,7 +189,10 @@ footer {
     width: 100%;
 }
 
-
+@media (min-width: 768px) {
+    .img-responsive-height {
+      height: 170px !important;
+    }}
 
 .bloc{
     width: 25%;

@@ -13,19 +13,19 @@
   <div class="divcard row justify-content-center justify-content-evenly">
     <!--div class="dish-container row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-4 justify-content-center"-->
     {% for plat in plats %}
-    <div class="card mb-3" style="background-color: bisque; max-width: 540px; max-height: 170px; height: 170px;">
+    <div class="card mb-3 text-white flex-sm-column flex-md-row" style="background-color: #2c2c2c; max-width: 540px;">
       <div class="row g-0 h-100">
-        <div class="col-md-4 col-sm-6 h-100">
-          <img src="{{ plat.image }}" class="img-fluid h-100 object-fit-cover rounded-start" alt="{{ plat.libelle }}">
+        <div class="col-md-4 col-sm-4 col-xs-12 ">
+          <img src="{{ plat.image }}" class="card-img-top h-100 rounded-start img-responsive-height" style="/*width: 170px; height: 170px;" alt="{{ plat.libelle }}">
         </div>
-        <div class="col-md-8 col-sm-6 ">
-          <div class="card-body d-flex flex-column justify-content-between h-100">
+        <div class="col-md-8 col-sm-8 col-xs-12">
+          <div class="card-body d-flex flex-column h-100">
             <div>
               <h5 class="card-title">{{ plat.libelle }}</h5>
               <p class="card-text">{{ plat.description }}</p>
             </div>
             <div>
-              <button >Ajouter au panier</button>
+              <button class="text-center mt-2">Ajouter au panier</button>
             </div>
           </div>
         </div>
